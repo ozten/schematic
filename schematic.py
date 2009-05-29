@@ -127,7 +127,7 @@ def usage(name):
 
     
 def signalError(program_name, message=None):
-    if message != None:
+    if message is not None:
         print "%s\n" % message
     usage(program_name)
     sys.exit(2)
